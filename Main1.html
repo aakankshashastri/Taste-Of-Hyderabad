@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <title>Restaurants</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+    import css/styles.css
+    </style>
+
+    <body class="w3-black">
+        <nav class="w3-sidenav w3-center w3-small w3-hide-small">
+            <!-- Avatar image in top left corner -->
+
+                           <img src="images/icon.jpg" style="width:98%"> 
+                 <a class="w3-padding-large w3-black" href="#">
+                     <i class="fa fa-home w3-xxlarge"></i>
+                     <p>HOME</p>
+                 </a>
+                 <a class="w3-padding-large w3-hover-black" href="#Find">
+                     <i class="fa fa-search w3-xxlarge"></i>
+                     <p>SEARCH</p>
+                 </a>
+                 <a class="w3-padding-large w3-hover-black" href="Restaurants.html">
+                    <i class="material-icons">business</i>
+                     <p>DINERS</p>
+                 </a>
+                 <a class="w3-padding-large w3-hover-black" href="#contact">
+                     <i class="fa fa-envelope w3-xxlarge"></i>
+                     <p>CONTACT</p>
+                 </a>
+
+                 <a class="w3-padding-large w3-hover-black" id="myBtn" >
+                      <i class="glyphicon glyphicon-user"></i>
+                      <p>LOGIN</p>
+                 </a>
+
+        </nav>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Login to Restraunt</h2>
+    </div>
+    <div class="modal-body">
+      <p>Form here</p>
+   
+          <form class="modal-content animate" action="action_page.php">
+         <div class="imgcontainer">
+             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+         </div>
+         <div class="modal-body">
+             <label><b>Username</b></label>
+             <input type="text" placeholder="Enter Username" name="uname" required>
+             <label><b>Password</b></label>
+             <input type="password" placeholder="Enter Password" name="psw" required>
+             <button type="submit">Login</button>
+             <input type="checkbox" checked="checked"> Remember me
+         </div>
+         <div class="modal-footer" style="background-color:#f1f1f1">
+             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+             <hr>
+             <span class="psw"><a href="#">Forgot Password?</a></span>
+         </div>
+          </form>
+      <p>Some other text...</p>
+    </div>
+    
+  </div>
+
+</div>                  
+
+
+
+
+
+
+        <div class="w3-padding-large" id="main">
+            <!-- Header/Home -->
+            <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+                <h1 class="w3-jumbo"><span class="w3-hide-small">Taste</span>Of</span>Hyderabad.</h1>
+                <p>Dine to the heart's content.</p>
+                <img src="images/Rest.jpg" alt="rest" class="w3-image" width="992" height="1070">
+            </header>
+            <div class="w3-row w3-padding-64" id="about">
+                <div class="w3-col m6 w3-padding-large w3-hide-small">
+                    <img src="images/rest1.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+                </div>
+                <div class="w3-col m6 w3-padding-large">
+                    <h1 class="w3-center">About Catering</h1><br>
+                    <h5 class="w3-center">Tradition since 1889</h5>
+                    <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+                </div>
+            </div>
+             <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+
+             <!-- Testimonials -->
+             <h3 class="w3-padding-24 w3-text-light-grey">Team</h3>  
+             <img src="images/aak.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+             <p><span class="w3-large w3-margin-right">Aakanksha.</span> Developer.</p><br>
+             <img src="images/maha.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+             <p><span class="w3-large w3-margin-right">Mahathi.</span> Developer.</p>
+             <!-- End About Section -->
+             </div>
+        </div>
+<div class="w3-padding-large" id="main">
+            <p> Get in touch:</p>
+              <form action="form.asp" target="_blank">
+                  <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                  <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+                  <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+                  <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+                  <p>
+                  <button class="w3-btn w3-light-grey w3-padding-large" type="submit">
+                      <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                  </button>
+                  </p>
+              </form>
+        </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
